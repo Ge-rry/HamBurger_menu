@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <title>Hamburger</title>
+  </head>
+  <body class="bg-[#FAE8FF]">
+    <section class="py-10">
+        <div class="flex flex-col  items-start lg:flex-row justify-between lg:items-center px-6 lg:px-48 ">
+            <div class="flex items-center">
+                <span class="text-5xl curser-pointer hidden block pr-6" id="backmenu">
+                    <svg width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="41" height="41" rx="20.5" fill="#FEFEFE"/><path fill="#FEFEFE" d="M11 11h20v20H11z"/><path d="M20.167 25.167 16 21m0 0 4.167-4.167M16 21h10" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x=".5" y=".5" width="41" height="41" rx="20.5" stroke="#E2E8F0"/></svg>
+                </span>
+                <span class="text-5xl curser-pointer lg:hidden block pr-6" id="hammenu">
+                    <svg width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="21" fill="#000" fill-opacity=".07"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 16a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1ZM14 21a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1ZM14 26a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1Z" fill="#1E293B"/></svg>
+                </span>
+                <svg width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.4.4a1.8 1.8 0 1 0 0 3.6v14.4A3.6 3.6 0 0 0 6 22h4.654l-2.327 2.327a1.8 1.8 0 0 0 2.546 2.546L15 22.746l4.127 4.127a1.8 1.8 0 0 0 2.546-2.546L19.346 22H24a3.6 3.6 0 0 0 3.6-3.6V4a1.8 1.8 0 0 0 0-3.6H2.4Zm21.073 8.473a1.8 1.8 0 0 0-2.546-2.546L15 12.254l-2.327-2.327a1.8 1.8 0 0 0-2.546 0l-3.6 3.6a1.8 1.8 0 0 0 2.546 2.546l2.327-2.327 2.327 2.327a1.8 1.8 0 0 0 2.546 0l7.2-7.2Z" fill="#EC4899"/></svg>
+                <p class="ml-2 text-[#1E293B] text-[18px] font-medium leading-5">slideshub</p>
+            </div>
+            <div class="ml-20">
+                <ul class="flex hidden lg:items-center lg:flex-row lg:flex">
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">For Education</a></li>
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">For Templates</a></li>
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">Explore On Sales</a></li>
+
+                </ul>
+                
+            </div>
+            <div class="hidden" id="hidden-nav">
+                <ul class="flex flex-col ">
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">For Education</a></li>
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">For Templates</a></li>
+                    <li class="hover:border-b-4 border-[#414141] py-3 mx-8 text-[#1E293B] text-[16px] font-medium leading-5"><a href="#">Explore On Sales</a></li>
+
+                </ul>
+                
+            </div>
+            <button class="bg-[#000000] rounded-[4px] py-3 px-8 justify-center items-center mx-24 absolute bottom-14 lg:static hidden lg:flex" id="menuButton">
+                <p class="text-[#FEFEFE] text-[16px] font-normal leading-5 "><a href="#">Sign Up For Free</a></p>
+            </button>
+        </div>
+    </section>
+   
+    <script src="index.js" type="text/JavaScript" ></script>
+  </body>
+</html>
